@@ -65,7 +65,6 @@ fun TaskItem(
 
     SwipeToDismiss(
         state = dismissState,
-        notifications = {},
         directions = setOf(DismissDirection.StartToEnd, DismissDirection.EndToStart),
         background = {
             val direction = dismissState.dismissDirection ?: return@SwipeToDismiss
